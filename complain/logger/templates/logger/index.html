@@ -1,18 +1,28 @@
 <!doctype html>
 <html>
-<head></head>
+<head>
+<style>
+ul
+{
+ list-style-type: none;
+ list-style:none;
+}
+</style>
+</head>
 <body>
 
-<form>
- Log your complaint here:
- <input type="textarea" rows="10" cols="50" name="text_box">
- A screenshot of the issue:
+<form id="complaint_form">
+<ul>
+<li> A screenshot of the issue:
  (This should be a single image of the screen where the error occurred)
- <input type="file" id="screen_shot">
- Original document:
+ <input type="file" id="screen_shot"></li>
+ <li>Original document:
  (The original document that the error occured in)
- <input type="file" id="original_document">
+ <input type="file" id="original_document"></li>
 </form>
+<textarea rows="10" cols="50" name="text_box" form="complaint_form">
+Put the nature of your complaint or issue here...
+</textarea>
 
 </body>
 </html>
