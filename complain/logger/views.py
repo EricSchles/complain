@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from logger.models import Complaint
+from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
