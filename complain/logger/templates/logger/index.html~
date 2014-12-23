@@ -15,22 +15,21 @@ li
 </head>
 <body>
 
-<h1>Complaint form</h1>
 <form id="complaint_form">
 <ul>
-<li><textarea rows="10" cols="50" name="text_box" form="complaint_form">
-Put the nature of your complaint or issue here...
-</textarea></li>
- <li> A screenshot of the issue:</li>
-<li>(This should be a single image of the screen where the error occurred)</li>
+<li> A screenshot of the issue:</li>
+ <li>(This should be a single image of the screen where the error occurred)</li>
  <li><input type="file" id="screen_shot"></li>
  <li>Original document:</li>
  <li>(The original document that the error occured in)</li>
  <li><input type="file" id="original_document"></li>
  <li><input type="submit" value="Submit"</li>
-
 </ul>
 </form>
+<ul><li>
+<textarea rows="10" cols="50" name="text_box" form="complaint_form">
+Put the nature of your complaint or issue here...
+</textarea></li></ul>
 
 
 </body>
