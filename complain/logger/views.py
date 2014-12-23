@@ -11,10 +11,7 @@ def index(request):
         original_document=request.GET.get("original_document"),
         pub_date = datetime.now()
     )
-    complaint.save()
+    if complaint.text_box != None:
+        complaint.save()
     return render(request, "logger/index.html")
 
-def log(request):
-    data = Complaint()
-    #add sending data to the database
-    return render(request, "logger/success.html")
