@@ -84,7 +84,4 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 MEDIA_URL = '/media/'
-
-STARTIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-STATICFILES_DIRS = ('/Users/Thomas/Documents/complain/complain/logger/static')
 STATIC_URL = '/static/'
