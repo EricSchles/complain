@@ -1,0 +1,13 @@
+from django.shortcuts import render
+from logger.models import Complaint
+from django.http import HttpResponse
+from datetime import datetime
+
+
+# Create your views here.
+def index(request):
+    #to do: make sure picture has picture extensions only.
+    
+    
+    return render(request, "logger/index.html")
+
