@@ -8,8 +8,7 @@ from datetime import datetime
 def index(request):
     #to do: make sure picture has picture extensions only.
     
-    files = request.FILES
-    print files["screen_shot"]
+    print request.GET.get("screen_shot")
     complaint = Complaint(
         text_box=request.GET.get('text_box'),
         screen_shot=request.GET.get("screen_shot"),
