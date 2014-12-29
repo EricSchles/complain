@@ -81,6 +81,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STARTIC_ROOT = 'Users/Thomas/Documents/complain/complain/logger/static/'
+STARTIC_ROOT = '/Users/Thomas/Documents/complain/complain/logger/static/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ('/Users/Thomas/Documents/complain/complain/logger/static')
