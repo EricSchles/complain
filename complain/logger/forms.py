@@ -1,6 +1,6 @@
 from django import forms
 
-class DocumentForm(forms.Form):
+class ComplaintForm(forms.Form):
 	docfile = forms.FileField(
 		label='Select a file'
 		)

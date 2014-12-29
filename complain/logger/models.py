@@ -10,8 +10,8 @@ class Complaint(models.Model):
     complain_id = models.AutoField(primary_key=True)
     text_box = models.CharField(max_length=4000,blank=True,null=True)
     pub_date = models.DateTimeField('date created',blank=True,null=True)
-    screen_shot = models.ImageField(upload_to='/media/', max_length=2**20,blank=True, null=True) 
-    original_document = models.FileField(upload_to='/media/', max_length=2**40,blank=True,null=True)
+    screen_shot = models.ImageField(upload_to='screen_shots/%Y/%m/%d', max_length=2**20,blank=True, null=True) 
+    original_document = models.FileField(upload_to='original_document/%Y/%m/%d', max_length=2**40,blank=True,null=True)
 
     def __str__(self):
         return str(self.complain_id)
