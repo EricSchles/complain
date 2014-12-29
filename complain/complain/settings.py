@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -81,6 +82,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STARTIC_ROOT = '/Users/Thomas/Documents/'
+STARTIC_ROOT = '/'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ('/Users/Thomas/Documents/complain/complain/logger/static')
