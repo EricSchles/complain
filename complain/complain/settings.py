@@ -87,3 +87,4 @@ MEDIA_URL = '/media/'
 
 STARTIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATICFILES_DIRS = ('/Users/Thomas/Documents/complain/complain/logger/static')
+STATIC_URL = '/static/'
