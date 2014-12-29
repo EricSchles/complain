@@ -1,6 +1,7 @@
 from django.db import models
 import os
 #screen_shot from http://stackoverflow.com/questions/8189800/django-store-user-image-in-model
+#better example: http://stackoverflow.com/questions/5871730/need-a-minimal-django-file-upload-example -- file upload
 def get_image_path(instance,filename):
     return os.path.join('screen_shots',str(instance.id),filename)
 # Create your models here.
